@@ -1,0 +1,48 @@
+<div class="body2">
+
+<button (click)="onclick()" type="button" class="nupp">
+{{ReadMore?"Näita kriitikat":"Peida kriitika"}}
+</button>
+<br>
+
+<!--p>{{lapkok()}}</p-->
+
+<ng-container *ngIf="visible">
+
+
+
+<label>    
+<div class="flashcard" [class.flipped]="flipped" (click)="toggle()">
+    <div class="front">
+      <span>Efektiivsuse ja rentaabluse suurendamine aitavad kaasa sellele, et ettevõte võiks tulla oma probleemidest välja.Sisuks on see, et ettevõte kui (raha) tootmise üksus pannakse nii varade kui turu mõttes paremini tööle, ostetud vahendid teevad rohkem tööd ja klient tuleb rohkem oma raha tooma.</span>
+  </div>
+    <div [ngClass] ="{'back':lapkok() ==2 ,'back2':lapkok() ==4}" >
+    <!--div class="back"-->
+    <span>Efektiivsuse ja rentaabluse vähendamine ei ole hea mõte. Kui see juhtub, siis tähendab see seda, et ettevõttel lähevad asjad kehvemini. Reaalses elus ei peaks efektiivsust ja rentaablust püüdma vähendada (kui midagi just ei on ülepingest katki minemas), need kipuvad ise vähenema.  Antud süsteemis on see sees selleks, et vaadata, mis saab siis, kui efektiivsus ja rentaablus peaksid vähenema.</span>
+    <!--div class="back">N   "btn  btn-danger" ow showing the back size {{kirjuta()}}</div-->
+    </div>
+</div>
+</label>
+
+</ng-container>
+
+
+
+<!--label>    
+<div class="flashcard" [class.flipped]="flipped" (click)="toggle()">
+  <div class="front">
+    <span>Täiendava sisendina on muudetud laenude osakaalu, s.t. on võetud laenu juurde. Samuti on täiendava sisendina toodud lahendus, et ettevõte käive suureneb. Need sisendid on arvesse võetud ja käesolevas analüüsis sellest lähtutakse.</span>
+</div>
+  <div [ngClass] ="{'back':flagln ==2 ,'back2':flagln ==4}" >
+  <span>Laenu juurdevõtmine ei ole õige mõte, bilansistruktuuri hinnangut ja laenukoormust arvestades täiendavat laenu juurde võtta ei saa. Samas, kui on võimalik ettevõtte käivet suurendada, siis see on väga toetav ja asjakohane lahendus ning muudab ettevõtte seisu paremaks.</span>
+  
+  </div>
+</div>
+</label-->
+
+<div [ngClass] ="{'bodyClass2':flagln ==2 ,'bodyClass1':flagln ==3, 'bodyClass3':flagln ==4}" > <br>
+
+</div>
+
+</div>
+<hr class="style-five">

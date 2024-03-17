@@ -1,0 +1,15 @@
+<div class="body">
+
+<div class="chat container">
+  <div *ngFor="let msg of session">
+    <matrix-vrobot-msg
+      [message]="msg"
+      (eventOptionSelected)="onOptionSelected($event)"
+    ></matrix-vrobot-msg>
+  </div>
+  
+  <div class="msg-writing" *ngIf="writing">Mõtlen pisut...</div>
+  </div>
+  <br>
+
+</div>

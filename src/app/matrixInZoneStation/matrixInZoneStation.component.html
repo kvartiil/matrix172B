@@ -1,0 +1,29 @@
+<div class="tekstselgitItal">
+Arengustsenaariumi valik
+</div>
+<br>
+<div class="tekstselgit2">
+Alljärgnevalt on võimalik valida n.ö. taustastsenaarium, mille järgi arvuti ettevõtte arengut modelleerib. Taustastsenaarium annab n.ö. raamistiku, milles ettevõte peab toime tulema ja mis omakorda mõjutab muid valikuid (või piirab neid).
+</div>
+<br>
+<div class="tekstselgit4">
+Vali oma unelmate stsenaarium:
+</div>
+
+<div class="container">
+<div *ngFor="let option of options; let i=index">
+  <div class="radio">
+    <input type="radio" id="{{option.id}}" name="radio" [(ngModel)]="value" [value]="option.id" />
+    <label for="{{option.id}}">{{option.id}}</label>
+  </div>
+</div>
+</div>
+
+<br>
+<br>
+<div class="tekstselgit3">
+{{value}} {{kirjutayles()}}
+</div>
+
+<br>
+<br>

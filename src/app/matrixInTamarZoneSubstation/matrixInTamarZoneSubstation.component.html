@@ -1,0 +1,27 @@
+<br>
+<br>
+<div class="tekstselgitItal">
+Plaanid ettevõtte varadega
+</div>
+<br>
+<div class="tekstselgit2">
+Ettevõttel on üldjuhul mingit liiki vara. See aitab ärieesmärke täita, sest tavaliselt on äri ajamiseks midagi vaja. Varasse on võimalik täiendavalt investeerida, siis peaks äriulatust olema võimalik laiendada.  Samuti on vara võimalik müüa, ärile võib mõjuda halvasti, kuid samas vabastab teatud rahalisi vahendeid (hea lahendus, kui varade tootlikus madala ja maksevõimet vaja parandada).
+</div>
+<br>
+
+
+<div class="tekstselgit2">
+<!--div class="form-group"-->
+<div *ngFor="let option of options; let i=index">
+  <div class="radio">
+    <input type="radio" id="{{option.id}}" name="radio" [(ngModel)]="value" [value]="option.id" />
+    <label for="{{option.id}}">{{option.id}}</label>
+    <!--label for="{{option.value}}">{{option.value}}</label-->
+  </div>
+</div>
+</div>
+
+<hr>
+<div class="tekstselgit2">
+Plaan varadega: {{value}} {{kirjutayles()}}
+</div>

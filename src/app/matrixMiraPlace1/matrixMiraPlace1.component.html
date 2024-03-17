@@ -1,0 +1,27 @@
+
+<div class="tekstselgit">  
+Mudelite valimine
+</div>
+<br>
+<div class="tekstselgit2">  
+Siin on võimalik valida, milliseid mudeleid kasutada ja milliseid mitte...
+</div>
+<br>
+<div class="tekstselgit2">  
+Kasuta neid mudeleid:
+</div>
+
+<app-box *ngFor="let name of list1"
+        [name]="name"
+        (click)="move(name)"
+></app-box>
+<br> <br>
+<div class="tekstselgit2">  
+Need mudelid on kõrvale tõstetud:
+</div>
+
+
+<app-box *ngFor="let name of list2"
+        [name]="name"
+        (click)="move(name)"
+></app-box>
